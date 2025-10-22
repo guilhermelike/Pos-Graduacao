@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Soma } from './soma';
+import { Soma } from './somaComponent';
+import { SomaService } from './services';
 
 
 
@@ -13,6 +14,9 @@ import { Soma } from './soma';
   ],
   exports: [
     Soma
+  ],
+  providers: [
+    SomaService
   ]
 })
 export class SomaModule { }
